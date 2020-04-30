@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .some-content {
+      display: none;
+    }
+
+    .some-content.active {
+      display: block;
+    }
+
+    button[aria-expanded="true"] {
+      background: red;
+    }
+  </style>
+</head>
+<body>
+  <button type="button" aria-expanded="false" aria-controls="content-1">Toggle</button>
+  <div class="some-content" id="content-1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias neque 
+    commodi qui ipsum, officia quis nostrum sequi fugit molestiae tempora. Quos repellat tempore laudantium voluptatem tenetur temporibus ducimus ad quis.
+  </div>
+
+  <button type="button" aria-expanded="false" aria-controls="content-2">Toggle Content 2</button>
+  <div class="some-content" id="content-2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias neque 
+    commodi qui ipsum, officia quis nostrum sequi fugit molestiae tempora. Quos repellat tempore laudantium voluptatem tenetur temporibus ducimus ad quis.
+  </div>
+
+  <button type="button" aria-expanded="false" aria-controls="content-3">Toggle Content 3</button>
+  <div class="some-content" id="content-3">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias neque 
+    commodi qui ipsum, officia quis nostrum sequi fugit molestiae tempora. Quos repellat tempore laudantium voluptatem tenetur temporibus ducimus ad quis.
+  </div>
+
+  <button type="button" aria-expanded="false" aria-controls="content-4">Toggle Content 4</button>
+  <div class="some-content" id="content-4">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias neque 
+    commodi qui ipsum, officia quis nostrum sequi fugit molestiae tempora. Quos repellat tempore laudantium voluptatem tenetur temporibus ducimus ad quis.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
