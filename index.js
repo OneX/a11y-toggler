@@ -21,6 +21,7 @@ Toggler.prototype = {
   },
   bindEvents: function() {
     var self = this;
+
     this.el.addEventListener('click', function(){
       if (self.active) {
         self.decativate()
@@ -28,6 +29,13 @@ Toggler.prototype = {
         self.activate()
       }
     })
+
+    document.addEventListener('keyup', function (e) {
+      if (e.key === 'Escape' || e.key === 'Esc') {
+        self.decativate();
+      }
+    });
+
   },
   setTarget: function(){
     var targetId = this.el.getAttribute('aria-controls')
